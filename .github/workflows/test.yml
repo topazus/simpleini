@@ -27,6 +27,7 @@ jobs:
         cmake . -B build -DSIMPLEINI_USE_SYSTEM_GTEST=ON
         cmake --build build-system-gtest
         ctest --test-dir build-system-gtest
+
   MacOS:
     runs-on: macos-latest
     steps:
