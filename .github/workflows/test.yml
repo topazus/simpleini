@@ -24,7 +24,7 @@ jobs:
 
     - name: test with CMake (-DSIMPLEINI_USE_SYSTEM_GTEST=ON)
       run: |
-        cmake . -B build -DSIMPLEINI_USE_SYSTEM_GTEST=ON
+        cmake . -B build-system-gtest -DSIMPLEINI_USE_SYSTEM_GTEST=ON
         cmake --build build-system-gtest
         ctest --test-dir build-system-gtest
 
@@ -44,6 +44,6 @@ jobs:
 
     - name: test with CMake (-DSIMPLEINI_USE_SYSTEM_GTEST=ON)
       run: |
-        cmake . -B build -DSIMPLEINI_USE_SYSTEM_GTEST=ON
+        cmake . -B build-system-gtest -DSIMPLEINI_USE_SYSTEM_GTEST=ON
         cmake --build build-system-gtest
         ctest --test-dir build-system-gtest
